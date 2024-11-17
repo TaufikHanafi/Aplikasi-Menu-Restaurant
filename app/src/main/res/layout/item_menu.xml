@@ -1,0 +1,46 @@
+<!-- res/layout/item_menu.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nasikucing" />
+
+    <TextView
+        android:id="@+id/namaMakananTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Nama Makanan" />
+
+    <TextView
+        android:id="@+id/keteranganMakananTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaMakananTextView"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:text="Keterangan Makanan" />
+
+    <TextView
+        android:id="@+id/hargaMakananTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keteranganMakananTextView"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:text="Harga Makanan" />
+
+</RelativeLayout>
